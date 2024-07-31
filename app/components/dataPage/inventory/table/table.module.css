@@ -1,0 +1,43 @@
+/* Main Container */
+.tableContainer {
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+/* Hide scrollbar */
+.tableContainer::-webkit-scrollbar {
+  display: none;
+}
+.tableContainer {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+/* Table Header */
+.tableHeader {
+  border-bottom: solid 2px #333;
+  background-color: black;
+}
+.tableHeaderCell {
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+/* Table Body */
+.tableRow {
+  display: table-row !important;
+}
+.tableCell {
+  background-color: lightgray; 
+  display: table-cell !important; 
+  align-items: center; 
+  width: auto;
+  font-family: var(--font-family);
+}
+/* Remove Button */
+.removeButton {
+  background-color: #FF0000;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+.removeButton:hover {
+  background-color: #8f0202;
+}
+  

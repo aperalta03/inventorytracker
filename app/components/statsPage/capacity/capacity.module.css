@@ -1,0 +1,55 @@
+/* Main Container */
+.container {
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End visible */
+    }
+}
+.title {
+    font-size: 20px;
+    font-weight: 1000;
+    font-style: italic;
+    font-family: var(--font-family);
+    margin: 0;
+    margin-bottom: 10px;
+}
+.progressContainer {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.progressBar {
+    top: 27vh;
+    width: 32vw!important;
+    height: 10vh !important;
+    transform: rotate(270deg);
+}
+.progressLabel {
+    font-weight: 1000;
+    font-style: italic;
+    font-family: var(--font-family);
+    margin: 0;
+    margin-bottom: 10px;
+}

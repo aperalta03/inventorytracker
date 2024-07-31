@@ -1,0 +1,54 @@
+/* Main Container */
+.container {
+    border: 2px solid var(--primary-color);
+    padding: 0; /* Ensure there is no padding */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    padding: 10px;
+    height: 100%;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End visible */
+    }
+}
+.title {
+    font-style: italic;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+/* Table */
+.table {
+    width: 100%;
+    height: 94%;    
+}
+.row {
+    border: 2px solid;
+    background-color: lightgray;
+    color: black;
+    max-height: 100px;
+    font-family: var(--font-family);
+}
+/* Align text */
+.table td:nth-child(1),
+.table th:nth-child(1) {
+    text-align: center;
+}
+.table td:nth-child(2),
+.table th:nth-child(2) {
+    text-align: center;
+}

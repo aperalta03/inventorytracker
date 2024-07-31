@@ -1,0 +1,46 @@
+/* Main Container */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Title Container */
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    color: var(--text-color);
+    padding: 20px;
+}
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+/* Pages Container */
+.pagesContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    gap: 10px;
+    justify-content: center;
+    padding-right: 30px;
+}
+/* Tab */
+.tab {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    width: 20vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+}
+/* Custom Indicator */
+.customIndicator {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,87 @@
+@import '/vars.css';
+
+/* Main Container */
+.mainContainer {
+  width: 66vw;
+  height: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  border: solid 2px var(--primary-color);
+  border-radius: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    opacity: 1; /* End visible */
+  }
+}
+/* Modal Container */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: var(--background-color);
+  border: solid 2px var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-color);
+}
+.modalText {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: bold;
+}
+.modalStack {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+}
+/* Adder Container */
+.addingContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+/* Add Button */
+.addButton {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 30%;
+  height: 100%;
+  border-radius: 0px !important;
+  font-family: var(--font-family);
+}
+.addButton:hover {
+  background-color: var(--primaryfade-color);
+}
+/* Search Bar */
+.searchBar {
+  width: 50%;
+  height: 100%;
+  border-radius: 18.5px 0px 0px 0px !important;
+  background-color: var(--text-color);
+}
+/* Content Container */
+.content {
+  width: 100%;
+  height: 74vh;
+  overflow: auto;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 0 0 18.5px 18.5px;
+}

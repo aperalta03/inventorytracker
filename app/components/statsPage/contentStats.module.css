@@ -1,0 +1,34 @@
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+} 
+.row {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+} 
+.pieandtotal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+.expirationtable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+}
+.capacity {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 10%;
+    margin-right: 10px;
+}

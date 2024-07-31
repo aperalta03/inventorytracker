@@ -1,0 +1,101 @@
+/* Main Container */
+.mainContainer {
+  width: 25vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;    
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  border: solid 2px var(--primary-color);
+  opacity: 0;
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    opacity: 1; /* End visible */
+  }
+}
+/* Chat Container */
+.chatContainer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+}
+.chatContainer::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+/* Background Text */
+.backgroundText {
+  position: absolute;
+  font-size: 24px;
+  color: rgba(14, 13, 13, 0.1);
+  z-index: 0;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-style: italic;
+  top: 2vh;
+}
+/* Messages */
+.userMessage, .botMessage {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-family);
+}
+.userMessage {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  align-self: flex-end;
+}
+.botMessage {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  align-self: flex-start;
+  color: var(--text-color);
+}
+/* Typing Indicator */
+.typingIndicator {
+  color: var(--text-color);
+  font-style: italic;
+}
+/* Input Box Container */
+.inputBoxContainer {
+  display: flex;
+  width: 100%;
+  height: 8%;
+}
+.inputBox {
+  flex: 1;
+  background-color: var(--text-color);
+  box-sizing: border-box;
+  width: 80%;
+}
+/* Send Button */
+.sendButton {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  height: 100%;
+  border-radius: 0px !important;
+  width: 80px;
+  flex-shrink: 0;
+  font-family: var(--font-family);
+}
+.sendButton:hover {
+  background-color: var(--primaryfade-color);
+}

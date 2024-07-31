@@ -1,0 +1,40 @@
+/* Modal Container */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: var(--secondary-color);
+    border: solid 5px var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+.modalText {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.modalStack {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}  
+.modalButton {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 50%;
+    height: 55px;
+    border-radius: 10px;
+}
+.modalButton:hover {
+    background-color: var(--primaryfade-color);
+}

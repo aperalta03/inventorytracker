@@ -1,0 +1,15 @@
+- Components:
+    - navbar:
+        1.
+    - dataPage:
+        - inventory:
+            #! 1. Delete trailing/forward whitespace in words, avoid inputting the same item as a 'new' item.
+            #! 2. Add an image per item
+            3. Voicechat Input
+            #! 4. Chatbot functionality
+    - statsPage:
+        - expirationtable:
+            1. Fix the ordering
+    - cameraPage:
+        - classification:
+            1. According to the name given, get calories and category from Food API
