@@ -3,7 +3,6 @@ import { fetchInventory, addItemToInventory, removeItemFromInventory } from "./i
 import { useEffect, useState } from "react";
 import Form from "./form/form";
 import InventoryTable from "./table/table";
-import VoiceChatButton from "./voicechat/voicechat";
 import styles from './inventoryDF.module.css';
 
 const InventoryDataFrame = () => {
@@ -83,7 +82,6 @@ const InventoryDataFrame = () => {
         <Button className={styles.addButton} onClick={handleOpen}>
           Add
         </Button>
-        <VoiceChatButton />
       </Box>
       {/* Content Container */}
       <Box className={styles.content}>

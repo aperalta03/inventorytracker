@@ -1,14 +1,15 @@
+// pages/index.js
 "use client";
 import { Box } from "@mui/material";
-import Navbar from "../app/components/navbar/navbar";
-import DataPage from "../app/components/dataPage/contentData";
 import styles from './index.module.css';
+import LoginPage from "../app/components/loginPage/contentLogin";
+import Footer from '../app/components/footer/footer';
 
-export default function Data() {
+export default function Index() {
   return (
     <Box className={styles.page}>
-      <Navbar />
-      <DataPage />
+      <LoginPage />
+      <Footer />
     </Box>
   );
 }

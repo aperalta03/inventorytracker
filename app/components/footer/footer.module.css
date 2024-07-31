@@ -1,0 +1,14 @@
+/* Main Container */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: var(--background-color);
+}
+.watermark {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: 10px;
+    color: var(--text-color);
+}

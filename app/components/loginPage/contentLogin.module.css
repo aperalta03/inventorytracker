@@ -1,0 +1,76 @@
+/* Main Container */
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--background-color);
+}
+/* Title */
+.title {
+    margin-bottom: 30vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInTop 2s ease-in-out forwards;
+}
+/* Button */
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: absolute;
+    top: 60vh;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    animation: fadeInBottom 2s ease-in-out forwards;
+}
+.button:hover {
+    background-color: var(--primaryfade-color);
+}
+/* Title Animation */
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Button Animation */
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Details */
+.blurOne {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 30vw;
+    height: 15vh;
+    top: 30vh;
+    left: 10vw;
+    filter: blur(200px);
+}
+.blurTwo {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 30vw;
+    height: 15vh;
+    top: 60vh;
+    right: 10vw;
+    filter: blur(200px);
+}

@@ -10,8 +10,10 @@
 }
 /* Title Container */
 .titleContainer {
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 40%;
     color: var(--text-color);
@@ -19,7 +21,22 @@
 }
 .title {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+}
+/* Logout Button */
+.logoutButton {
+    height: 75%;
+    width: 10%;
+    margin-right: 10px;
+    top: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+.logoutButton:hover {
+    cursor: pointer;
+    background-color: var(--primaryfade-color);
 }
 /* Pages Container */
 .pagesContainer {

@@ -1,17 +1,21 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+// firebase.js
+import { initializeApp } from 'firebase/app';
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCPgtpaQ_Ndyu-zCgepzpXbHVVOUYg0Joc",
-  authDomain: "pantrytracker-bad71.firebaseapp.com",
-  projectId: "pantrytracker-bad71",
-  storageBucket: "pantrytracker-bad71.appspot.com",
-  messagingSenderId: "357521567314",
-  appId: "1:357521567314:web:2d71a14f8bd917245db98b",
-  measurementId: "G-ZLDJMEQXVL"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 const firestore = getFirestore(app);
-export { app, firestore }
+
+export { app, auth, provider, signInWithPopup, firestore };

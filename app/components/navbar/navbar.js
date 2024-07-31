@@ -1,7 +1,7 @@
 // navbar.js
 import React from 'react';
 import Link from 'next/link';
-import { Box, Tabs, Tab, Typography } from '@mui/material';
+import { Box, Tabs, Tab, Typography, Button } from '@mui/material';
 import { useRouter } from 'next/router';
 import styles from './navbar.module.css';
 
@@ -9,11 +9,18 @@ const Navbar = () => {
   const router = useRouter();
   const currentPath = router.pathname;
 
+  const handleLogout = () => {
+    router.push('/');
+  };
+
   return (
     <Box className={styles.navbar}>
       <Box className={styles.titleContainer}>
         <Typography variant="h5" className={styles.title}>Inventory Tracker</Typography>
       </Box>
+      <Button className={styles.logoutButton} onClick={handleLogout}>
+        LOGOUT
+      </Button>
       <Box className={styles.pagesContainer}>
         <Tabs
           className={styles.tabs} 
@@ -25,9 +32,9 @@ const Navbar = () => {
         >
           <Tab 
             label="Data" 
-            value="/" 
+            value="/data" 
             component={Link} 
-            href="/" 
+            href="/data" 
             className={styles.tab} 
           />
           <Tab 

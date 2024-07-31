@@ -1,15 +1,15 @@
 "use client";
 import { Box } from "@mui/material";
-import styles from './stats.module.css';
+import styles from './index.module.css';
 import Navbar from "../app/components/navbar/navbar";
-import StatsPage from "../app/components/statsPage/contentStats";
+import DataPage from "../app/components/dataPage/contentData";
 import Footer from '../app/components/footer/footer';
 
-export default function Stats() {
+export default function Data() {
   return (
     <Box className={styles.page}>
       <Navbar />
-      <StatsPage />
+      <DataPage />
       <Footer />
     </Box>
   );

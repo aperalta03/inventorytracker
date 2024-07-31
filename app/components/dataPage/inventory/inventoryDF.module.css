@@ -61,9 +61,9 @@
 .addButton {
   background-color: var(--primary-color);
   color: var(--text-color);
-  width: 30%;
+  width: 31%;
   height: 100%;
-  border-radius: 0px !important;
+  border-radius: 0px 18px 0px 0px !important;
   font-family: var(--font-family);
 }
 .addButton:hover {
@@ -71,7 +71,7 @@
 }
 /* Search Bar */
 .searchBar {
-  width: 50%;
+  width: 70%;
   height: 100%;
   border-radius: 18.5px 0px 0px 0px !important;
   background-color: var(--text-color);
