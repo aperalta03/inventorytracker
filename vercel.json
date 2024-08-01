@@ -1,20 +1,8 @@
 {
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
+  "rewrites": [
+    { 
+      "source": "/(.*)", 
+      "destination": "/" 
     }
-  },
-  "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
-  "buildCommand": "npm install --legacy-peer-deps && npm run build"
+  ]
 }
