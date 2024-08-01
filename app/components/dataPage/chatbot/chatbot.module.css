@@ -73,6 +73,7 @@
 .typingIndicator {
   color: var(--text-color);
   font-style: italic;
+  font-family: var(--font-family);
 }
 /* Input Box Container */
 .inputBoxContainer {

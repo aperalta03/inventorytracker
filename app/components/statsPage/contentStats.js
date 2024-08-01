@@ -4,8 +4,9 @@ import { Box, Typography } from "@mui/material";
 import styles from './contentStats.module.css';
 import PieChart from './piechart/piechart';
 import ExpirationTable from './expirationtable/expirationtable';
-import TotalCalories from './total/total';
-import CapacityBar from './capacity/capacity'; // Ensure this import points to the updated CapacityBar component
+import TotalCalories from './totalcal/totalcal';
+import TotalValue from './totalvalue/totalvalue';
+import CapacityBar from './capacity/capacity';
 
 const StatsPage = () => {
   return (
@@ -14,7 +15,7 @@ const StatsPage = () => {
         <Box className={styles.pieandtotal}>
           <PieChart />
           <TotalCalories />
-          <TotalCalories />
+          <TotalValue />
         </Box>
         <Box className={styles.expirationtable}>
           <ExpirationTable />

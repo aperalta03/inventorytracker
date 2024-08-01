@@ -32,7 +32,8 @@
     margin-right: 10px;
     top: 10px;
     background-color: var(--primary-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    font-family: var(--font-family);
 }
 .logoutButton:hover {
     cursor: pointer;

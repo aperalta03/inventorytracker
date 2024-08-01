@@ -1,7 +1,7 @@
 // TotalCalories.js
 import React, { useEffect, useState } from 'react';
 import { fetchInventory } from "../../dataPage/inventory/inventoryLogic";
-import styles from './total.module.css';
+import styles from './totalcal.module.css';
 
 const TotalCalories = () => {
   const [totalCalories, setTotalCalories] = useState(0);

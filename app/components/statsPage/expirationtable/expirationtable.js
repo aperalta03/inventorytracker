@@ -9,7 +9,8 @@ const ExpirationTable = () => {
   useEffect(() => {
     const getData = async () => {
       const inventoryList = await fetchInventory();
-      const sortedInventory = inventoryList.sort((a, b) => new Date(a.expirationDate) - new Date(b.expirationDate));
+      // Assuming expirationDate is a numerical value representing days until expiration
+      const sortedInventory = inventoryList.sort((a, b) => a.expirationDate - b.expirationDate);
       setInventory(sortedInventory);
     };
     getData();
