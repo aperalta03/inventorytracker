@@ -6,7 +6,7 @@
   },
   "builds": [
     {
-      "src": "package.json",
+      "src": "next.config.s",
       "use": "@vercel/next"
     }
   ],
