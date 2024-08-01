@@ -45,6 +45,7 @@
 .button {
     background-color: var(--primary-color);
     color: var(--text-color);
+    font-family: var(--font-family);
     position: absolute;
     top: 60vh;
     padding: 10px;
