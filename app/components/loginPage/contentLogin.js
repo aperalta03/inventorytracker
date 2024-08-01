@@ -11,7 +11,6 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      // Sign in with Google
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
 
